@@ -17,10 +17,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(Arsenal(notification:)), name: .Arsenal, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(Barcelona(notification:)), name: .Barcelona, object: nil)
+    }
+    @objc func Arsenal(notification:Notification) {
+        lbl.text = "Arsenal"
+        img.image = #imageLiteral(resourceName: "Arsenal")
+        view.backgroundColor = .red
+    }
+    @objc func Barcelona(notification:Notification) {
+        lbl.text = "Barcelona"
+        img.image = #imageLiteral(resourceName: "Barcelona")
+        view.backgroundColor = .blue
+        
     }
 
     @IBAction func btnSelect(_ sender: Any) {
+        let secondVC = self.storyboard?.instantiateViewController(identifier: "Second") as! SecondViewController
+        self.navigationController?.pushViewController(secondVC, animated: true)
     }
     
 }

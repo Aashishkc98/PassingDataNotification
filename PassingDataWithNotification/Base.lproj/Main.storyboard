@@ -19,7 +19,9 @@
                                 <rect key="frame" x="102" y="237" width="212" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Choose-Side"/>
+                                <state key="normal" title="Choose-Side">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="btnSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TUm-OI-Uz0"/>
                                 </connections>
@@ -60,8 +62,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZN-LI-IbQ">
                                 <rect key="frame" x="20" y="406" width="177" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="ArsenaFC"/>
+                                <state key="normal" title="ArsenaFC">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="btnArsenal:" destination="m7a-K4-goX" eventType="touchUpInside" id="VYi-qH-fQw"/>
                                 </connections>
@@ -69,8 +74,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKd-w8-47I">
                                 <rect key="frame" x="217" y="406" width="177" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="BarcelonaFC"/>
+                                <state key="normal" title="BarcelonaFC">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="btnBarcelona:" destination="m7a-K4-goX" eventType="touchUpInside" id="h7y-wp-CRZ"/>
                                 </connections>

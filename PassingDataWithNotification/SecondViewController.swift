@@ -17,9 +17,11 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func btnArsenal(_ sender: Any) {
+        NotificationCenter.default.post(name: .Arsenal, object: nil)
     }
     
     @IBAction func btnBarcelona(_ sender: Any) {
+        NotificationCenter.default.post(name: .Barcelona, object: nil)
     }
     
 }
