@@ -20,6 +20,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Choose-Side"/>
+                                <connections>
+                                    <action selector="btnSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TUm-OI-Uz0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAz-Kl-8zg">
                                 <rect key="frame" x="20" y="336" width="374" height="61"/>
@@ -37,6 +40,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Choose Side" id="vgK-tS-KxY"/>
+                    <connections>
+                        <outlet property="img" destination="w7R-pe-d2K" id="YrS-97-4V8"/>
+                        <outlet property="lbl" destination="VAz-Kl-8zg" id="Uvs-6r-LW9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,12 +62,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="ArsenaFC"/>
+                                <connections>
+                                    <action selector="btnArsenal:" destination="m7a-K4-goX" eventType="touchUpInside" id="VYi-qH-fQw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKd-w8-47I">
                                 <rect key="frame" x="217" y="406" width="177" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="BarcelonaFC"/>
+                                <connections>
+                                    <action selector="btnBarcelona:" destination="m7a-K4-goX" eventType="touchUpInside" id="h7y-wp-CRZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

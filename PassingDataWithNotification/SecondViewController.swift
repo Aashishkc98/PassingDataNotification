@@ -16,5 +16,10 @@ class SecondViewController: UIViewController {
   
     }
     
-
+    @IBAction func btnArsenal(_ sender: Any) {
+    }
+    
+    @IBAction func btnBarcelona(_ sender: Any) {
+    }
+    
 }
